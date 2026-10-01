@@ -1,0 +1,11 @@
+# Secrets — jamais commités
+/.env
+.env.*
+!.env.example
+
+# Systèmes / éditeurs
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log

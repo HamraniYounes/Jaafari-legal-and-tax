@@ -1,0 +1,9 @@
+# Interdit tout accès web direct à ce dossier.
+# Les fichiers restent utilisables par PHP (include/require) côté serveur.
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>
